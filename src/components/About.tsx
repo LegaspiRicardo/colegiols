@@ -32,7 +32,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             Sobre Nosotros
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto text-justify">
             Somos una institución educativa comprometida con la formación 
             integral de niños y jóvenes, combinando excelencia académica con valores humanos.
           </p>
@@ -53,7 +53,7 @@ const About: React.FC = () => {
         <div className="bg-linear-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 text-white">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">25+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">130+</div>
               <div className="text-blue-100">Años de Experiencia</div>
             </div>
             <div>
@@ -65,7 +65,7 @@ const About: React.FC = () => {
               <div className="text-blue-100">Docentes</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">2</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">3</div>
               <div className="text-blue-100">Niveles Educativos</div>
             </div>
           </div>

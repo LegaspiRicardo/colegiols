@@ -10,11 +10,12 @@ const Hero: React.FC = () => {
           <div className="space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
               Colegio
-              <span className="text-blue-600 block">Luis Silva</span>
+              <span className="text-blue-600 block">Luis Silva A.C.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              Más de 25 años formando estudiantes con excelencia académica y valores humanos. 
-              Educación para primaria y secundaria.
+              Más de 136 años formando estudiantes con excelencia académica y valores humanos. 
+              <br />
+              Educación para preescolar, primaria y secundaria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a 
