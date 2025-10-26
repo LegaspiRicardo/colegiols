@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
             Contacto
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            ¿Interesado en nuestro colegio? Contáctanos para más información sobre matrículas y procesos de admisión.
+            ¿Interesado en nuestro colegio? Contáctanos para más información sobre procesos de admisión.
           </p>
         </div>
 

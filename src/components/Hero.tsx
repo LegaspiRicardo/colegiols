@@ -14,14 +14,14 @@ const Hero: React.FC = () => {
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
               Más de 25 años formando estudiantes con excelencia académica y valores humanos. 
-              Educación integral para primaria y secundaria.
+              Educación para primaria y secundaria.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a 
                 href="#contacto" 
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg text-base font-semibold hover:bg-blue-700 transition-colors text-center"
               >
-                Matrículas Abiertas
+                Inscripciones Abiertas
               </a>
               <a 
                 href="#niveles" 

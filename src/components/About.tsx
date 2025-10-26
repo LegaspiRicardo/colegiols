@@ -33,7 +33,7 @@ const About: React.FC = () => {
             Sobre Nosotros
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            El Colegio Luis Silva es una institución educativa comprometida con la formación 
+            Somos una institución educativa comprometida con la formación 
             integral de niños y jóvenes, combinando excelencia académica con valores humanos.
           </p>
         </div>
