@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Dirección</h4>
-                    <p className="text-gray-600">Av. Principal #123, Ciudad</p>
+                    <p className="text-gray-600">C. José María Morelos #644. Zona Centro</p>
                   </div>
                 </div>
 
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Teléfono</h4>
-                    <p className="text-gray-600">+1 (234) 567-8900</p>
+                    <p className="text-gray-600">(+52) 33 3613 4392</p>
                   </div>
                 </div>
 
