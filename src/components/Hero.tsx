@@ -3,7 +3,7 @@ import Container from './Container';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="pt-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section id="inicio" className="pt-20 bg-linear-to-br from-blue-50 to-indigo-100">
       <Container>
         <div className="grid md:grid-cols-2 gap-8 items-center py-16">
           {/* Texto */}

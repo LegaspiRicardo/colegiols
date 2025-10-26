@@ -2,7 +2,7 @@ import React from 'react';
 import Container from './Container';
 
 const About: React.FC = () => {
-  const features = [
+ {/* const features = [
     {
       icon: "🎓",
       title: "Excelencia Académica",
@@ -24,7 +24,7 @@ const About: React.FC = () => {
       description: "Personal docente con amplia experiencia y vocación"
     }
   ];
-
+*/}
   return (
     <section id="nosotros" className="py-16 bg-white">
       <Container>
@@ -50,7 +50,7 @@ const About: React.FC = () => {
           ))}
         </div>*/}
 
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 text-white">
+        <div className="bg-linear-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 text-white">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold mb-2">25+</div>
