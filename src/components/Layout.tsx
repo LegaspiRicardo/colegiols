@@ -1,17 +1,22 @@
-import React from 'react';
+// src/components/Layout.tsx
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 interface LayoutProps {
   children: React.ReactNode;
-  className?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, className = '' }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <div className={`w-full max-w-[100vw] overflow-x-hidden`}>
-      <div className={`w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl ${className}`}>
-        {children}
-      </div>
-    </div>
+    <main className="pt-16 min-h-screen">
+      {children}
+    </main>
   );
 };
 

@@ -1,24 +1,29 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Levels from './components/Levels';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import LevelsPage from "./pages/LevelsPage";
+import ContactPage from "./pages/ContactPage";
+import GalleryPage from "./pages/GalleryPage";
+import EventsPage from "./pages/EventsPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
-    <div className=" bg-white">
-      <Header />
-      <main >
-        <Hero />
-        <About />
-        <Levels />
-        <Gallery />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="bg-white">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/niveles" element={<LevelsPage />} />
+          <Route path="/galeria" element={<GalleryPage />} />
+          <Route path="/eventos" element={<EventsPage />} />
+          <Route path="/contacto" element={<ContactPage />} />
+          <Route path="/nosotros" element={<AboutPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
