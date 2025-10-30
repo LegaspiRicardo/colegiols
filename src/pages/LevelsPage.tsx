@@ -1,5 +1,5 @@
 // Ejemplo para LevelsPage.tsx
-import Levels from '../components/homeComponents/Levels';
+import LevelsPageComponent from '../components/Levels';
 import Layout from '../components/Layout';
 
 function LevelsPage() {
@@ -11,7 +11,7 @@ function LevelsPage() {
           <p className="text-xl">Conoce nuestra oferta académica completa</p>
         </div>
       </div>
-      <Levels />
+      <LevelsPageComponent />
     </Layout>
   );
 }

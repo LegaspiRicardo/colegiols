@@ -8,7 +8,7 @@ const Levels: React.FC = () => {
   const levels = [
     {
       title: "Preescolar",
-      description: "Formación inicial con enfoque en desarrollo integral, estimulación temprana y aprendizaje a través del juego.",
+      description: "Formación inicial con desarrollo integral, estimulación temprana y aprendizaje a través del juego.",
       features: [
         "Estimulación temprana",
         "Desarrollo socioemocional",
@@ -16,11 +16,11 @@ const Levels: React.FC = () => {
         "Actividades lúdicas y creativas",
         "Ambiente seguro y afectivo"
       ],
-      color: "from-purple-500 to-pink-600"
+      color: "from-orange-400 to-amber-500"
     },
     {
-      title: "Educación Primaria",
-      description: "Formación básica integral que desarrolla habilidades fundamentales con enfoque constructivista y valores.",
+      title: "Primaria",
+      description: "Formación básica que desarrolla habilidades fundamentales con enfoque constructivista y valores.",
       features: [
         "Atención personalizada",
         "Programa de lectura comprensiva",
@@ -28,10 +28,10 @@ const Levels: React.FC = () => {
         "Formación en valores",
         "Inglés desde temprana edad"
       ],
-      color: "from-green-500 to-emerald-600"
+      color: "from-emerald-600 to-green-600/70"
     },
     {
-      title: "Educación Secundaria",
+      title: "Secundaria",
       description: "Formación científica-humanista con preparación para la educación superior y desarrollo de competencias profesionales.",
       features: [
         "Preparación pre-universitaria",
@@ -40,7 +40,7 @@ const Levels: React.FC = () => {
         "Programa de inglés intensivo",
         "Desarrollo de competencias digitales"
       ],
-      color: "from-blue-500 to-indigo-600"
+      color: "from-indigo-800 to-purple-500"
     }
   ];
 
@@ -119,7 +119,7 @@ const Levels: React.FC = () => {
             >
               <div className={`bg-linear-to-r ${level.color} p-6 text-white`}>
                 <div className="flex items-center space-x-4">
-                  <h3 className="text-xl md:text-2xl font-bold">{level.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-bold ">{level.title}</h3>
                 </div>
               </div>
               
@@ -185,7 +185,7 @@ const Levels: React.FC = () => {
         </motion.div>
 
         {/* Metodología y Tradición */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="md:w-9/12 md:mx-auto gap-8 mb-12">
           <motion.div 
             className="bg-linear-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 text-white"
             initial="hidden"
@@ -193,7 +193,7 @@ const Levels: React.FC = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h3 className="text-2xl font-bold mb-4">Tradición y Vanguardia</h3>
+            <h3 className="text-2xl font-bold mb-4 text-center">Tradición y Vanguardia</h3>
             <p className="mb-4 leading-relaxed text-justify">
               Con <span className="font-bold">136 años de labor ininterrumpida</span>, hemos formado generaciones 
               de profesionales exitosos, manteniendo nuestra esencia mientras evolucionamos con los tiempos.
@@ -209,7 +209,7 @@ const Levels: React.FC = () => {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <div className="bg-linear-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
+          <div className="bg-linear-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               ¿Listo para formar parte de nuestra institución?
             </h3>

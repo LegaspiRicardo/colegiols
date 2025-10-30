@@ -13,11 +13,10 @@ const Levels: React.FC = () => {
         "Actividades lúdicas y creativas",
         "Ambiente seguro y afectivo"
       ],
-      image: "👶",
       color: "from-purple-500 to-pink-600"
     },
     {
-      title: "Educación Primaria",
+      title: "Primaria",
       description: "Formación básica integral que desarrolla habilidades fundamentales con enfoque constructivista y valores.",
       features: [
         "Atención personalizada",
@@ -26,11 +25,10 @@ const Levels: React.FC = () => {
         "Formación en valores",
         "Inglés desde temprana edad"
       ],
-      image: "📚",
       color: "from-green-500 to-emerald-600"
     },
     {
-      title: "Educación Secundaria",
+      title: "Secundaria",
       description: "Formación científica-humanista con preparación para la educación superior y desarrollo de competencias profesionales.",
       features: [
         "Preparación pre-universitaria",
@@ -39,7 +37,6 @@ const Levels: React.FC = () => {
         "Programa de inglés intensivo",
         "Desarrollo de competencias digitales"
       ],
-      image: "🔬",
       color: "from-blue-500 to-indigo-600"
     }
   ];
@@ -70,16 +67,15 @@ const Levels: React.FC = () => {
   return (
     <section id="niveles" className="py-16 bg-gray-50">
       <Container>
-        {/* Header */}
-        <div className="text-center mb-12">
+        {/*<div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             Niveles Educativos
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto text-justify">
             Colegio mixto con <span className="font-semibold text-blue-600">enfoque constructivista y perfil ecléctico</span>, 
             adaptándonos a los cambios de la sociedad para brindar una educación de vanguardia.
-          </p>
-        </div>
+          </p>¿
+        </div>*/}
 
         {/* Niveles Educativos */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
@@ -87,7 +83,6 @@ const Levels: React.FC = () => {
             <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className={`bg-linear-to-r ${level.color} p-6 text-white`}>
                 <div className="flex items-center space-x-4">
-                  <div className="text-3xl">{level.image}</div>
                   <h3 className="text-xl md:text-2xl font-bold">{level.title}</h3>
                 </div>
               </div>
