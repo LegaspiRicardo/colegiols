@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
   const toggleMobileMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    
+
     // Prevenir scroll del body cuando el menú está abierto
     if (!isMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -27,14 +27,14 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg fixed w-full top-0 z-50">
+    <header className="bg-white text-center shadow-lg fixed w-full top-0 z-50">
       <Container>
         <div className="flex justify-between items-center py-4">
           {/* Logo y Nombre de la escuela - Siempre visible */}
           <div className="flex items-center space-x-3">
             <Link to="/" onClick={handleLinkClick}>
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">LS</span>
+              <div className="w-10 h-10  rounded-full flex items-center justify-center">
+                <img src="/images/logotipotransparente.png" alt="" />
               </div>
             </Link>
             <div className="hidden sm:block"> {/* Visible en móviles grandes y desktop */}
@@ -52,9 +52,12 @@ const Header: React.FC = () => {
           {/* Nombre corto para móviles pequeños - Solo el nombre sin eslogan */}
           <div className="sm:hidden">
             <Link to="/" onClick={handleLinkClick}>
-              <h1 className="text-lg font-bold text-gray-800">
+              <h1 className="text-lg font-bold text-gray-800 ">
                 Colegio Luis Silva
               </h1>
+              <p className="text-xs text-gray-600">
+                Formando líderes del mañana
+              </p>
             </Link>
           </div>
 
@@ -96,7 +99,7 @@ const Header: React.FC = () => {
             >
               Contacto
             </Link>
-            
+
             {/* Botón Facebook en desktop */}
             <a
               href="https://www.facebook.com/colegioluissilvaoficial/"
@@ -150,8 +153,8 @@ const Header: React.FC = () => {
           {/* Header del menú móvil */}
           <div className="p-4 border-b border-blue-700">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <span className="text-blue-600 font-bold text-sm">LS</span>
+              <div className="w-10 h-10  rounded-full flex items-center justify-center">
+                <img src="/images/logotipols.jpg" alt="" className="rounded-full" />
               </div>
               <div>
                 <h2 className="text-white font-bold text-lg">Colegio Luis Silva</h2>
@@ -165,47 +168,68 @@ const Header: React.FC = () => {
             <nav className="flex flex-col space-y-1 p-4">
               <Link
                 to="/"
-                className="text-white hover:bg-blue-700 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
+                className="text-white bg-blue-900/50 hover:bg-blue-600 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
                 onClick={handleLinkClick}
               >
-                Inicio
+                <div className="flex ">
+                  <img src="/icons/casa.png" alt="" className="w-6 h-6 ml-4 mt-1 " />
+                  <p className="w-7/12 ">Inicio</p>
+                </div>
               </Link>
               <Link
                 to="/nosotros"
-                className="text-white hover:bg-blue-700 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
+                className="text-white bg-blue-900/50 hover:bg-blue-600 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
                 onClick={handleLinkClick}
               >
-                Nosotros
+                <div className="flex ">
+                  <img src="/icons/nosotros.png" alt="" className="w-6 h-6 ml-4 mt-1 " />
+                  <p className="w-7/12 ml-4 ">Nosotros</p>
+                </div>
               </Link>
               <Link
                 to="/niveles"
-                className="text-white hover:bg-blue-700 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
+                className="text-white bg-blue-900/50 hover:bg-blue-600 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
                 onClick={handleLinkClick}
               >
-                Oferta academica
+                <div className="flex ">
+                  <img src="/icons/oferta.png" alt="" className="w-6 h-6 ml-4 mt-1 " />
+                  <p className="w-7/12 ml-12">Oferta academica</p>
+                </div>
               </Link>
               <Link
                 to="/galeria"
-                className="text-white hover:bg-blue-700 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
+                className="text-white bg-blue-900/50 hover:bg-blue-600 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
                 onClick={handleLinkClick}
               >
-                Galería
+                <div className="flex ">
+                  <img src="/icons/galeria.png" alt="" className="w-6 h-6 ml-4 mt-1 " />
+                  <p className="w-7/12 ml-1">Galería</p>
+                </div>
               </Link>
               <Link
                 to="/eventos"
-                className="text-white hover:bg-blue-700 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
+                className="text-white bg-blue-900/50 hover:bg-blue-600 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
                 onClick={handleLinkClick}
               >
-                Eventos
+                <div className="flex ">
+                  <img src="/icons/calendario.png" alt="" className="w-6 h-6 ml-4 mt-1 " />
+                  <p className="w-7/12 ml-2">Eventos</p>
+                </div>
               </Link>
               <Link
                 to="/contacto"
-                className="text-white hover:bg-blue-700 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
+                className="text-white bg-blue-900/50 hover:bg-blue-600 font-medium text-lg py-4 px-4 rounded-lg transition-colors"
                 onClick={handleLinkClick}
               >
-                Contacto
+                <div className="flex ">
+                  <img src="/icons/telefono.png" alt="" className="w-6 h-6 ml-4 mt-1 " />
+                  <p className="w-7/12 ml-4">Contacto</p>
+                </div>
               </Link>
-              
+
+
+
+
               {/* Botón Facebook en móvil */}
               <a
                 href="https://www.facebook.com/colegioluissilvaoficial/"
@@ -222,7 +246,7 @@ const Header: React.FC = () => {
 
         {/* Overlay para cerrar menú */}
         {isMenuOpen && (
-          <div 
+          <div
             className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
             onClick={toggleMobileMenu}
           />

@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
           {/* Logo y Descripción */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">LS</span>
+              <div className="w-10 h-10 rounded-full flex items-center justify-center">
+                    <img src="/images/logotipols.jpg" alt="" className='rounded-full'/>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Colegio Luis Silva</h3>
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              Más de 25 años comprometidos con la educación de calidad y la formación 
+              Más de 130 años comprometidos con la educación de calidad y la formación 
               integral de niños y jóvenes para un futuro mejor.
             </p>
             <div className="flex space-x-4">
